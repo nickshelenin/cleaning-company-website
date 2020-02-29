@@ -39,8 +39,8 @@ ul {
 .main-banner .img-holder {
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0))), url("../images/main-slide2.jpg");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0)), url("../images/main-slide2.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4))), url("../images/main-slide2.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4)), url("../images/main-slide2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -146,7 +146,7 @@ ul {
 .cleaning-services-content .cleaning-services-text p {
   width: 95%;
   margin: auto;
-  color: #757575;
+  color: #6b6b6b;
 }
 
 @media (min-width: 768px) {
@@ -217,15 +217,15 @@ ul {
 .cleaning-services-content .service-card .service-card-list {
   line-height: 2em;
   margin-bottom: 2.5em;
-  color: #757575;
+  color: #6b6b6b;
 }
 
 .cleaning-services-content .service-card .service-card-cta {
   border: 3px solid #4ba0e8;
   padding: 0.5em 1.5em;
   border-radius: 25px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .cleaning-services-content .service-card .service-card-cta:hover {
@@ -323,7 +323,7 @@ ul {
 
 .about-section p {
   font-size: 0.9em;
-  color: #757575;
+  color: #6b6b6b;
   line-height: 1.5em;
 }
 
@@ -345,7 +345,7 @@ ul {
 
 .about-section .info-section-1 .about-links-content ul {
   font-size: 0.9em;
-  color: #757575;
+  color: #6b6b6b;
   font-weight: 300;
   line-height: 2em;
 }
@@ -444,7 +444,7 @@ ul {
 
 .reasons-why-us p {
   font-size: 0.9em;
-  color: #757575;
+  color: #6b6b6b;
   line-height: 1.5em;
 }
 
@@ -510,6 +510,19 @@ ul {
   margin-bottom: 5em;
   padding: 3em 0;
   position: relative;
+}
+
+.testimonials .testimonial-swiper-container {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.testimonials .testimonial-swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #6fbf52;
 }
 
 .testimonials h1 {
@@ -607,7 +620,7 @@ ul {
   font-style: italic;
   font-size: 0.9em;
   height: 200px;
-  color: #757575;
+  color: #6b6b6b;
 }
 
 @media (min-width: 768px) {
@@ -789,7 +802,7 @@ img {
 
 .cleaning-products-container p {
   font-size: 0.9em;
-  color: #757575;
+  color: #6b6b6b;
   line-height: 1.5em;
 }
 

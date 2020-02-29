@@ -54,7 +54,7 @@ footer .checkmark {
 }
 
 .footer-content ul li a {
-  color: #99a0a6;
+  color: #6b6b6b;
 }
 
 .footer-content ul li a:hover {
@@ -73,7 +73,7 @@ footer .checkmark {
 }
 
 .footer-content .footer-newsletter p {
-  color: #99a0a6;
+  color: #6b6b6b;
 }
 
 @media (min-width: 768px) {
@@ -157,7 +157,7 @@ footer .checkmark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #99a0a6;
+  color: #6b6b6b;
 }
 
 .footer-content .footer-contact img {
@@ -175,7 +175,7 @@ footer .checkmark {
 .copyright-container .copyright {
   width: 90%;
   margin: auto;
-  color: #99a0a6;
+  color: #6b6b6b;
 }
 
 @media (min-width: 1200px) {

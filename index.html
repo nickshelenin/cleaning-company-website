@@ -235,50 +235,52 @@
       <div class="testimonials">
          <h1>Happy Customers, Happy Homes</h1>
 
-         <figure class="figure">
-            <div class="quotes">
-               <img src="icons/quote-left.svg" class="left-quote" />
-               <img src="icons/right-quotation-mark.svg" class="right-quote" />
+         <div class="testimonial-swiper-container">
+            <div class="swiper-wrapper">
+               <figure class="figure swiper-slide">
+                  <div class="quotes">
+                     <img src="icons/quote-left.svg" class="left-quote" />
+                     <img src="icons/right-quotation-mark.svg" class="right-quote" />
+                  </div>
+
+                  <blockquote>
+                     As a handyman with some of the same clients, I see not only the incredible job this company do, but how much her client
+                     appreciate the attention to detail, care, and products use. When they leave a job the place is not only expertly clean but it
+                     always feels and smells that way when you walk in the door!
+                  </blockquote>
+
+                  <div class="author">
+                     <div class="author-image-container">
+                        <img src="images/author1.jpeg" />
+                     </div>
+
+                     <figcaption><span class="author-name">John Davis.</span> Dothan, Alabama</figcaption>
+                  </div>
+               </figure>
+
+               <figure class="figure swiper-slide">
+                  <div class="quotes">
+                     <img src="icons/quote-left.svg" class="left-quote" />
+                     <img src="icons/right-quotation-mark.svg" class="right-quote" />
+                  </div>
+
+                  <blockquote>
+                     They are very professional and do a great job cleaning the house!! I locked myself out of my house the other day and they were
+                     the only ones with a key. They were kind enough to drive over to unlock the door. That speaks volumes!!! They really care about
+                     their clients.
+                  </blockquote>
+
+                  <div class="author">
+                     <div class="author-image-container">
+                        <img src="images/author2.jpeg" />
+                     </div>
+
+                     <figcaption><span class="author-name">Katie Hall.</span> Montgomery, Alabama</figcaption>
+                  </div>
+               </figure>
             </div>
 
-            <blockquote>
-               As a handyman with some of the same clients, I see not only the incredible job this company do, but how much her client appreciate the
-               attention to detail, care, and products use. When they leave a job the place is not only expertly clean but it always feels and smells
-               that way when you walk in the door!
-            </blockquote>
-
-            <div class="author">
-               <div class="author-image-container">
-                  <img src="images/author1.jpeg" />
-               </div>
-
-               <figcaption><span class="author-name">John Davis.</span> Dothan, Alabama</figcaption>
-            </div>
-         </figure>
-
-         <figure class="figure">
-            <div class="quotes">
-               <img src="icons/quote-left.svg" class="left-quote" />
-               <img src="icons/right-quotation-mark.svg" class="right-quote" />
-            </div>
-
-            <blockquote>
-               They are very professional and do a great job cleaning the house!! I locked myself out of my house the other day and they were the only
-               ones with a key. They were kind enough to drive over to unlock the door. That speaks volumes!!! They really care about their clients.
-            </blockquote>
-
-            <div class="author">
-               <div class="author-image-container">
-                  <img src="images/author2.jpeg" />
-               </div>
-
-               <figcaption><span class="author-name">Katie Hall.</span> Montgomery, Alabama</figcaption>
-            </div>
-         </figure>
-
-         <div class="testimonial-dots">
-            <span class="testimonial-dot" onclick="currentSlide(1)"></span>
-            <span class="testimonial-dot" onclick="currentSlide(2)"></span>
+            <div class="swiper-pagination"></div>
          </div>
       </div>
 
@@ -359,25 +361,34 @@
       <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
       <script>
-         const swiper = new Swiper(".swiper-container", {
+         const slider1 = new Swiper(".swiper-container", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             autoplay: {
-               delay: 2000
+               delay: 5000
             },
             pagination: {
                el: ".swiper-pagination",
                clickable: true
             },
-            breakPoints: {
+            breakpoints: {
                768: {
                   slidesPerView: 2,
                   spaceBetween: 50
                },
                1024: {
-                 slidesPerView: 3
+                  slidesPerView: 3
                }
+            }
+         });
+
+         const slider2 = new Swiper(".testimonial-swiper-container", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+               el: ".swiper-pagination",
+               clickable: true
             }
          });
       </script>
