@@ -35,10 +35,14 @@ ul {
 
    .main-slide1 {
       background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide1.jpg");
+      height: 100%;
    }
 
    .main-slide2 {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide11.jpg");
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide2.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 100%;
    }
 
    .main-slide3 {
@@ -47,7 +51,7 @@ ul {
 
    .img-holder {
       width: 100%;
-      height: 300px;
+      height: 45vh;
       background-position: center;
       background-size: cover;
 
@@ -120,8 +124,12 @@ ul {
    .swiper-container {
       .swiper-pagination {
          .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
+         }
+
+         .swiper-pagination-bullet-active {
+            background-color: $green;
          }
       }
    }
