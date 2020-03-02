@@ -26,7 +26,6 @@
                >
                   <div class="slide-text">
                      <h1>Clean Home</h1>
-                     <h1>Professional Service</h1>
                      <p>Our professional and experienced cleaning staff does the job right the first time</p>
 
                      <a href="services.html" class="banner-learn-more-btn">Learn More</a>
@@ -36,7 +35,6 @@
                <!-- slide 2 -->
                <div class="img-holder swiper-slide">
                   <div class="slide-text main-slide2">
-                     <h1>Clean Home</h1>
                      <h1>Professional Service</h1>
                      <p>Our professional and experienced cleaning staff does the job right the first time</p>
 
@@ -48,13 +46,15 @@
                <div class="img-holder main-slide3 swiper-slide">
                   <div class="slide-text">
                      <h1>Clean Home</h1>
-                     <h1>Professional Service</h1>
                      <p>Our professional and experienced cleaning staff does the job right the first time</p>
 
                      <a href="services.html" class="banner-learn-more-btn">Learn More</a>
                   </div>
                </div>
             </div>
+
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
 
             <div class="swiper-pagination"></div>
          </div>
@@ -368,7 +368,7 @@
 
                <div class="statistic-numbers">
                   <h1>100+</h1>
-                  <p>Cleaner</p>
+                  <p>Cleaners</p>
                </div>
             </div>
 
@@ -421,6 +421,10 @@
             loop: true,
             autoplay: {
                delay: 5000
+            },
+            navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev"
             },
             pagination: {
                el: ".swiper-pagination",

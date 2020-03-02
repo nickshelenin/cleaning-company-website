@@ -22,7 +22,6 @@ ul {
 
 .main-banner {
    padding-top: 50px;
-   // height: 700px;
    width: 100%;
 
    @include ipadPro() {
@@ -34,19 +33,24 @@ ul {
    }
 
    .main-slide1 {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide1.jpg");
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1)), url("../images/slide.jpg");
+      background-position: center;
+      background-size: cover;
       height: 100%;
    }
 
    .main-slide2 {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide2.jpg");
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1)), url("../images/main-slide2.jpg");
       background-position: center;
       background-size: cover;
       height: 100%;
    }
 
    .main-slide3 {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide3.jpg");
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1)), url("../images/main-slide3.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 100%;
    }
 
    .img-holder {
@@ -55,16 +59,20 @@ ul {
       background-position: center;
       background-size: cover;
 
-      @include ipad {
+      @include desktop {
+         height: 80vh;
       }
 
       .slide-text {
          color: #fff;
          text-align: center;
-         padding-top: 4em;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
 
          @include desktop() {
-            padding-top: 10em;
          }
 
          h1 {
@@ -77,12 +85,10 @@ ul {
          }
 
          p {
-            padding-bottom: 1em;
-
             @include ipad {
                width: 50%;
-               margin: auto;
                padding: 1em 0 2em 0;
+               font-size: 1.1 rem;
             }
 
             @include ipadPro() {
@@ -100,10 +106,8 @@ ul {
             border: 2px solid #fff;
             border-radius: 50px;
             padding: 0.5em 1.5em;
-            // margin-top: 20em;
             transition: 300ms;
             font-weight: bold;
-            // font-size: 1.1rem;
 
             @include ipadPro() {
                padding: 0.6em 2.5em;
@@ -129,7 +133,7 @@ ul {
          }
 
          .swiper-pagination-bullet-active {
-            background-color: $green;
+            background-color: #fff;
          }
       }
    }
