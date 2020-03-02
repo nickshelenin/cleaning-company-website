@@ -27,7 +27,8 @@ a {
    align-items: center;
    justify-content: space-between;
    z-index: 9999;
-   border: none !important;
+   // box-shadow: rgb(22, 24, 30) 0px 14px 27px 0px;
+   display: none;
 }
 
 .logo {
@@ -164,9 +165,6 @@ a {
       .submenu.menu-clicked {
          display: block;
       }
-
-      .submenu.menu-clicked {
-      }
    }
 
    .mobile-nav-links.ham-clicked {
@@ -216,12 +214,6 @@ a {
       &:hover {
          color: $second-color;
       }
-   }
-
-   #dropdown-container {
-   }
-
-   #services-link {
    }
 
    #services-header-dropdown {
