@@ -19,7 +19,7 @@ a {
 
 .main-header {
    position: fixed;
-   background: #fff;
+   background: #000;
    top: 0;
    height: 70px;
    width: 100%;
@@ -27,7 +27,6 @@ a {
    align-items: center;
    justify-content: space-between;
    z-index: 9999;
-   border-bottom: 1px solid $light-gray;
 }
 
 .logo {

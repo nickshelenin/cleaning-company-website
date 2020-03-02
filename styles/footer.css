@@ -3,7 +3,7 @@ a {
 }
 
 footer {
-  background: #f1f2f3;
+  background: #f4f4f4;
 }
 
 footer .checkmark {
@@ -169,7 +169,6 @@ footer .checkmark {
 .copyright-container {
   text-align: center;
   background: #fff;
-  padding: 0.5em 0;
 }
 
 .copyright-container .copyright {

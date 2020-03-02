@@ -22,7 +22,7 @@ ul {
 
 .main-banner {
    padding-top: 50px;
-   height: 320px;
+   // height: 700px;
    width: 100%;
 
    @include ipadPro() {
@@ -33,12 +33,26 @@ ul {
       height: 700px;
    }
 
+   .main-slide1 {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide1.jpg");
+   }
+
+   .main-slide2 {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide11.jpg");
+   }
+
+   .main-slide3 {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/main-slide3.jpg");
+   }
+
    .img-holder {
       width: 100%;
-      height: 100%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.4)), url("../images/main-slide2.jpg");
+      height: 300px;
       background-position: center;
       background-size: cover;
+
+      @include ipad {
+      }
 
       .slide-text {
          color: #fff;
@@ -82,8 +96,10 @@ ul {
             border: 2px solid #fff;
             border-radius: 50px;
             padding: 0.5em 1.5em;
-            margin-top: 20em;
+            // margin-top: 20em;
             transition: 300ms;
+            font-weight: bold;
+            // font-size: 1.1rem;
 
             @include ipadPro() {
                padding: 0.6em 2.5em;
@@ -100,10 +116,20 @@ ul {
          }
       }
    }
+
+   .swiper-container {
+      .swiper-pagination {
+         .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+         }
+      }
+   }
 }
 
 .cleaning-services-content {
-   margin: 3em 0 7em 0;
+   margin-top: 7em;
+   position: relative;
 
    .checkmark {
       width: 20px;
@@ -145,7 +171,7 @@ ul {
       text-align: center;
       width: 330px;
       height: 430px;
-      margin: 3em auto 5em auto;
+      margin: 5em auto 5em auto;
       background: #fff;
       box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.17);
 
@@ -199,7 +225,8 @@ ul {
       }
    }
 
-   .swiper-container {
+   .services-swiper-container {
+      overflow: hidden;
       .swiper-slide {
          width: 50%;
       }
@@ -219,7 +246,7 @@ ul {
 
 .about-section {
    width: 90%;
-   margin: auto;
+   margin: 7em auto 0 auto;
    transition: 0.2s;
 
    @include ipad {
@@ -353,7 +380,7 @@ ul {
 
 .reasons-why-us {
    width: 90%;
-   margin: auto;
+   margin: 7em auto 0 auto;
 
    @include ipad {
       width: 95%;
@@ -435,27 +462,12 @@ ul {
    background: linear-gradient(to right, rgba(255, 255, 255, 0.95)), url("../images/testimonial-background.webp");
    background-size: cover;
    background-position: center;
-   margin-top: 5em;
+   margin-top: 7em;
    text-align: center;
-   margin-bottom: 5em;
-   padding: 3em 0;
+   padding: 5em 0;
    position: relative;
 
-   .testimonial-swiper-container {
-      overflow: hidden;
-      .swiper-pagination {
-         .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
-         }
-
-         .swiper-pagination-bullet-active {
-            background-color: $green;
-         }
-      }
-   }
-
-   h1 {
+   .testimonials-title {
       font-size: 1.5em;
       width: 80%;
       margin: 0 auto 1em auto;
@@ -471,60 +483,60 @@ ul {
       }
    }
 
+   .quotes {
+      .left-quote {
+         width: 20px;
+         height: 20px;
+         position: absolute;
+         left: -0.5em;
+         top: -1em;
+
+         @include ipad() {
+            left: 1em;
+         }
+
+         @include ipadPro() {
+            width: 50px;
+            height: 50px;
+            top: -3em;
+            left: 0;
+         }
+
+         @include desktop {
+            left: 3em;
+         }
+      }
+
+      .right-quote {
+         width: 20px;
+         height: 20px;
+         position: absolute;
+         right: 0;
+         top: 12em;
+
+         @include ipad() {
+            top: 6em;
+            right: 1em;
+         }
+
+         @include ipadPro() {
+            width: 50px;
+            height: 50px;
+            right: 0;
+         }
+
+         @include desktop {
+            right: 3em;
+         }
+      }
+   }
+
    figure {
       position: relative;
       margin-top: 3em;
 
       @include ipad {
          margin-top: 5em;
-      }
-
-      .quotes {
-         .left-quote {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            left: -0.5em;
-            top: -1em;
-
-            @include ipad() {
-               left: 1em;
-            }
-
-            @include ipadPro() {
-               width: 50px;
-               height: 50px;
-               top: -3em;
-               left: 0;
-            }
-
-            @include desktop {
-               left: 3em;
-            }
-         }
-
-         .right-quote {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            right: 0;
-            top: 12em;
-
-            @include ipad() {
-               top: 6em;
-               right: 1em;
-            }
-
-            @include ipadPro() {
-               width: 50px;
-               height: 50px;
-               right: 0;
-            }
-
-            @include desktop {
-               right: 3em;
-            }
-         }
       }
 
       blockquote {
@@ -544,7 +556,7 @@ ul {
          }
 
          @include desktop {
-            width: 70%;
+            width: 60%;
             margin-top: -1em;
          }
       }
@@ -552,7 +564,7 @@ ul {
       .author {
          text-align: center;
          margin-top: 3em;
-         font-weight: 900;
+         font-weight: bold;
 
          @include ipad {
             margin-top: 0;
@@ -576,33 +588,25 @@ ul {
       }
    }
 
-   .testimonial-dots {
-      text-align: center;
-      margin-top: 2em;
-      cursor: pointer;
+   .testimonial-swiper-container {
+      overflow: hidden;
 
-      .testimonial-dot {
-         width: 15px;
-         height: 15px;
-         background-color: #ccc;
-         border-radius: 50%;
-         text-align: center;
-         display: inline-block;
-         margin: 0 0.3em;
-      }
+      .swiper-pagination {
+         .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+         }
 
-      .testimonial-dot.selected {
-         width: 13px;
-         height: 13px;
-         background: #fff;
-         border: 2px solid $green;
+         .swiper-pagination-bullet-active {
+            background-color: $green;
+         }
       }
    }
 }
 
 .statistic {
-   margin-bottom: 5em;
-   background: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url("../images/statistic\ backgorund.jpg");
+   margin-top: 7em;
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.7)), url("../images/statistic\ backgorund.jpg");
    background-position: center;
    background-size: cover;
    height: 400px;
@@ -613,52 +617,38 @@ ul {
 
    .statistic-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       text-align: center;
+      height: 100%;
+      align-items: center;
 
       @include ipadPro() {
-         // grid-template-columns: repeat(4, 1fr);
+         grid-template-columns: repeat(4, 1fr);
       }
 
-      // @include desktop(){
-      // // grid-template-columns: repeat(4, 1fr);
-      // }
-   }
-
-   .green-border {
-      border-bottom: 2px solid $green;
-      margin: 0.5em 4em;
-      border-radius: 5px;
-
-      @include ipad {
-         margin: 0.5em 9em;
+      .statistic-card {
+         img {
+            width: 60px;
+            height: 60px;
+         }
+         .statistic-numbers {
+            line-height: 1em;
+            h1 {
+               font-size: 1.5em;
+            }
+            p {
+               @include ipad {
+                  font-size: 1.1rem;
+               }
+            }
+         }
       }
-
-      @include ipadPro {
-         margin: 1.5em 14em;
-      }
-
-      @include desktop() {
-         margin: 1.5em 18em;
-      }
-   }
-}
-
-img {
-   width: 60px;
-   height: 60px;
-}
-
-.statistic-numbers {
-   line-height: 1em;
-   h1 {
-      font-size: 1.5em;
    }
 }
 
 .cleaning-products-container {
    width: 90%;
-   margin: 2em auto 0 auto;
+   margin: 7em auto;
 
    @include ipad() {
       display: grid;
