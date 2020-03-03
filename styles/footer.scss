@@ -56,15 +56,6 @@ footer {
    }
 
    .footer-newsletter {
-      .logo {
-         width: 200px;
-         height: 70px;
-
-         @include ipad {
-            width: 170px;
-         }
-      }
-
       p {
          color: $light-gray;
 

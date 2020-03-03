@@ -61,17 +61,6 @@ footer .checkmark {
   text-decoration: underline;
 }
 
-.footer-content .footer-newsletter .logo {
-  width: 200px;
-  height: 70px;
-}
-
-@media (min-width: 768px) {
-  .footer-content .footer-newsletter .logo {
-    width: 170px;
-  }
-}
-
 .footer-content .footer-newsletter p {
   color: #6b6b6b;
 }
