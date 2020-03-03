@@ -59,7 +59,7 @@ ul {
       background-position: center;
       background-size: cover;
 
-      @include ipadPro{
+      @include ipadPro {
          height: 40em;
       }
 
@@ -85,16 +85,15 @@ ul {
          }
 
          p {
+            width: 80%;
             @include ipad {
                width: 50%;
                padding: 1em 0 2em 0;
                font-size: 1.1 rem;
             }
-
             @include ipadPro() {
                font-size: 1.2em;
             }
-
             @include desktop {
                font-size: 1.5em;
                margin: 1.5em auto;

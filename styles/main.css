@@ -102,6 +102,10 @@ ul {
   }
 }
 
+.main-banner .img-holder .slide-text p {
+  width: 80%;
+}
+
 @media (min-width: 768px) {
   .main-banner .img-holder .slide-text p {
     width: 50%;
